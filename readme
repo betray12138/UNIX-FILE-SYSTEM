@@ -1,0 +1,12 @@
+fformat : 格式化整个文件卷，构造一般目录结构
+ls (-path) : 列出当前目录或路径目录下的文件列表
+mkdir [-dir] : 创建一个目录
+fcreate [-file] [-right] : 根据所给权限创建一个文件 0 - 只读  1 - 读写 
+fopen [-file] [-right] : 根据所给权限打开一个文件 0 - 只读 1 - 读写 
+fclose [-fd] : 根据文件句柄关闭一个文件
+fread [-fd] [-nbytes] : 根据文件句柄读出nbytes字节的信息 
+fwrite [-fd] [-nbytes] [-string] : 根据文件句柄写入nbytes字节的信息 
+fseek [-fd] [-num] [-format] 根据文件句柄，调整文件指针偏移量 absolute - 绝对形式 relative - 相对形式 
+fdelete [-file] : 删除一个普通文件 
+cd [-path] : 进入某个目录
+exit : 退出程序
