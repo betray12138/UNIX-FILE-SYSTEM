@@ -1,3 +1,20 @@
+Í¬¼Ã´óÑ§²Ù×÷ÏµÍ³¿Î³ÌÉè¼Æ
+¹¹ÔìÒ»¸öÀàUNIX¶þ¼¶ÎÄ¼þÏµÍ³£¬Ä£ÄâUNIXµÄÒ»¸öÎÄ¼þ¾í£¬Ò»¸öÎÄ¼þ¾íÊµ¼Ê¾ÍÊÇÒ»ÕÅÂß¼­´ÅÅÌ£¬´ÅÅÌÖÐ´æ´¢µÄÐÅÏ¢ÒÔ¿éÎªµ¥Î»£¬Ã¿¿é512×Ö½Ú¡£
+¸ñÊ½»¯ÎÄ¼þ¾í£¬²¢ÇÒ½¨Á¢Ä¿Â¼½á¹¹£¬½«Ê¹ÓÃÃüÁîÐÐ·½Ê½µÈ´ýÓÃ»§ÊäÈë£¬¸ù¾ÝÓÃ»§²»Í¬µÄÊäÈë£¬·µ»Ø½á¹û¡£
+
+
+³ÌÐò¹¦ÄÜ£º
+ÓÃ»§ÊäÈëfformat£¬³ÌÐòÆô¶¯¸ñÊ½»¯ÎÄ¼þ¾í²Ù×÷
+ÓÃ»§ÊäÈëls¼°±ØÒªÐÅÏ¢£¬³ÌÐòÆô¶¯ÁÐÄ¿Â¼²Ù×÷
+ÓÃ»§ÊäÈëmkdir¼°±ØÒªÐÅÏ¢£¬³ÌÐòÆô¶¯´´½¨Ä¿Â¼²Ù×÷
+ÓÃ»§ÊäÈëfcreate¼°±ØÒªÐÅÏ¢£¬³ÌÐòÆô¶¯´´½¨ÎÄ¼þ²Ù×÷
+ÓÃ»§ÊäÈëfopen¼°±ØÒªÐÅÏ¢£¬³ÌÐòÆô¶¯´ò¿ªÎÄ¼þ²Ù×÷
+ÓÃ»§ÊäÈëfclose¼°±ØÒªÐÅÏ¢£¬³ÌÐòÆô¶¯¹Ø±ÕÎÄ¼þ²Ù×÷
+ÓÃ»§ÊäÈëfread¼°±ØÒªÐÅÏ¢£¬³ÌÐòÆô¶¯¶ÁÈ¡ÎÄ¼þ²Ù×÷
+ÓÃ»§ÊäÈëfwrite¼°±ØÒªÐÅÏ¢£¬³ÌÐòÆô¶¯Ð´ÈëÎÄ¼þ²Ù×÷
+ÓÃ»§ÊäÈëfseek¼°±ØÒªÐÅÏ¢£¬³ÌÐòÆô¶¯ÐÞ¸ÄÎÄ¼þÖ¸Õë²Ù×÷
+ÓÃ»§ÊäÈëfdelete¼°±ØÒªÐÅÏ¢£¬³ÌÐòÆô¶¯É¾³ýÎÄ¼þ²Ù×÷
+
 fformat : ¸ñÊ½»¯Õû¸öÎÄ¼þ¾í£¬¹¹ÔìÒ»°ãÄ¿Â¼½á¹¹
 ls (-path) : ÁÐ³öµ±Ç°Ä¿Â¼»òÂ·¾¶Ä¿Â¼ÏÂµÄÎÄ¼þÁÐ±í
 mkdir [-dir] : ´´½¨Ò»¸öÄ¿Â¼
@@ -10,3 +27,12 @@ fseek [-fd] [-num] [-format] ¸ù¾ÝÎÄ¼þ¾ä±ú£¬µ÷ÕûÎÄ¼þÖ¸ÕëÆ«ÒÆÁ¿ absolute - ¾ø¶ÔÐÎÊ
 fdelete [-file] : É¾³ýÒ»¸öÆÕÍ¨ÎÄ¼þ 
 cd [-path] : ½øÈëÄ³¸öÄ¿Â¼
 exit : ÍË³ö³ÌÐò
+
+ÈÎÎñ·Ö½â
+a.Ä£Äâ³ö´ÅÅÌÍâ´æÖÐµÄ´ÅÅÌÎÄ¼þ½á¹¹£¬ÆäÖÐ°üº¬diskinodeºÍsuperblock
+b.Ä£Äâ¸ßËÙ»º´æ½á¹¹£¬²ÉÓÃLRUËã·¨Ìá¸ß»º´æ¿éÖØÓÃÐ§ÂÊ
+c.Ä£ÄâÄÚ´æInode½Úµã±í£¬¹ÜÀíÄÚ´æËùÓÐ´ò¿ªÎÄ¼þ£¬ÆäÖÐ°üº¬ÄÚ´æInodeºÍÍâ´æ´ÅÅÌÎÄ¼þ½á¹¹
+d.Ä£ÄâÄÚ´æÎÄ¼þ´ò¿ª±í£¬¹ÜÀíÄÚ´æÖÐËùÓÐ´ò¿ªÎÄ¼þ£¬ÆäÖÐ°üÀ¨ÄÚ´æInode½Úµã±í£¬¸ßËÙ»º´æ½á¹¹ÒÔ¼°´ò¿ªÎÄ¼þ½á¹¹
+e.Ä£ÄâÎÄ¼þ¹ÜÀíÏµÍ³¶¥²ãÀà£¬ÓÃÓÚÌá¹©ÎÄ¼þÏµÍ³ËùÓÐ½Ó¿Ú£¬ÆäÖÐÐèÒª¼ÇÂ¼ÓÃ»§µ±Ç°Ëù´¦Ä¿Â¼µÄ¸ùÂ·¾¶ÒÔ¼°´Ó¸ùÂ·¾¶µ½´ïµ±Ç°Ä¿Â¼µÄdiskinodeÐòºÅ±ãÓÚ»ØÍË£¬ÇÒ°üº¬ÄÚ´æÎÄ¼þ´ò¿ª±í½á¹¹
+
+Ä£¿é¼äµÄÏµÍ³µ÷ÓÃ¹ØÏµ¼ûsystem.png
